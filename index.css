@@ -1,0 +1,106 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Karla', sans-serif;
+}
+
+button,p,div{
+    margin: 0;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    height: 74vh;
+    width: fit-content;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    right: 50%;
+    bottom: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #243441;
+    border-radius: 10px;
+}
+
+.display-calculation{
+    width: 100%;
+    height: 10rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 1rem;
+    grid-template-rows: 5fr 1fr ;
+    box-sizing: border-box;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+    text-align: end;
+}
+
+.pre-results{
+    font-size: 2.5rem;
+}
+
+.calculations{
+    font-size: 1rem;
+    color: #757e89;
+}
+
+.num-btn{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 15px;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 1rem 1rem 1rem;
+    border-top: 1px solid #757e89;
+}
+
+.same-style{
+    font-family: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    aspect-ratio: 1/1;
+    font-size: 1rem;
+    border: none;
+    background-color: #243441;
+    width: 3rem;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0px 0px 5px 1px #51E1ED;
+}
+
+#clear,#percent,.multiply,.divide,.add,.minus,#delete{
+    color: #ee802d;
+    font-size: 1.5rem;
+}
+
+#equal{
+    grid-column: 3/5;
+    border-radius: 5px;
+    background:#ee802d;
+    width: 100%;
+    height: 3rem;
+    box-shadow: none;
+}
+
+#equal:hover{
+    background-color: #055023;
+}
+
+.same-style:hover{
+    font-size: 1.7rem;
+    transition: ease-in-out;
+    transition-duration: 500ms;
+}
+
+#clear:hover,#percent:hover,.multiply:hover,.divide:hover,.add:hover,.minus:hover,#delete:hover{
+    color: white;
+    background-color: #ee802d;
+    transition: ease-in-out;
+    transition-duration: 300ms;
+    box-shadow: none;
+}
